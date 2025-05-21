@@ -38,7 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             />
           ) : (
             <img
-              src={product.media[0].src}
+              src={product.media[0].src.startsWith('/assets/') ? product.media[0].src : `/assets/${product.media[0].src}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}
@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         ) : (
           product.image && (
             <img
-              src={product.image}
+              src={product.image.startsWith('/assets/') ? product.image : `/assets/${product.image}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}
