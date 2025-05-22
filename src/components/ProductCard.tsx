@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {product.media && product.media.length > 0 ? (
           product.media[0].type === 'video' ? (
             <video
-              src={product.media[0].src.startsWith('/public/') ? product.media[0].src : `/public/${product.media[0].src}`}
+              src={product.media[0].src.startsWith('/') ? product.media[0].src : `/${product.media[0].src.replace(/^public\//, '')}`}
               autoPlay
               muted
               loop
@@ -34,11 +34,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               controls={false}
               className="w-full h-full object-cover object-center rounded bg-black"
               style={{ background: '#fff' }}
-              poster={product.media.find(m => m.type === 'image')?.src}
+              poster={product.media.find(m => m.type === 'image')?.src?.replace('/public/', '/')}
             />
           ) : (
             <img
-              src={product.media[0].src.startsWith('/public/') ? product.media[0].src : `/public/${product.media[0].src}`}
+              src={product.media[0].src.startsWith('/') ? product.media[0].src : `/${product.media[0].src.replace(/^public\//, '')}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}
@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         ) : (
           product.image && (
             <img
-              src={product.image.startsWith('/public/') ? product.image : `/public/${product.image}`}
+              src={product.image.startsWith('/') ? product.image : `/${product.image.replace(/^public\//, '')}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}

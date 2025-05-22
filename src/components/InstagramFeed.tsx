@@ -2,10 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Instagram } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
-import p1 from '/public/p1.jpg';
-import p2 from '/public/p2.jpg';
-import p3 from '/public/p3.jpg';
-import p4 from '/public/p4.jpg';
 
 const InstagramFeed: React.FC = () => {
   const [ref, inView] = useInView({
@@ -36,25 +32,25 @@ const InstagramFeed: React.FC = () => {
   const instagramPosts = [
     {
       id: 1,
-      image: p1,
+      image: '/p1.jpg',
       likes: 234,
       comments: 12
     },
     {
       id: 2,
-      image: p2,
+      image: '/p2.jpg',
       likes: 187,
       comments: 8
     },
     {
       id: 3,
-      image:p3,
+      image: '/p3.jpg',
       likes: 342,
       comments: 15
     },
     {
       id: 4,
-      image: p4,
+      image: '/p4.jpg',
       likes: 156,
       comments: 6
     }

@@ -8,7 +8,7 @@ export const products: Product[] = [
     price: 49.99,
     description: 'Beautiful resin frame with ocean wave pattern, perfect for wedding memories.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/01.jpg' },
+      { type: 'image', src: '/Resin Frames/01.jpg' },
     ],
     category: 'resin-frames',
     resinFrameType: 'navkar',
@@ -21,7 +21,7 @@ export const products: Product[] = [
     price: 59.99,
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/04.jpg' },
+      { type: 'image', src: '/Resin Frames/04.jpg' },
     ],
     category: 'resin-frames',
     resinFrameType: 'anniversary',
@@ -34,7 +34,7 @@ export const products: Product[] = [
     price: 59.99,
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
-      { type: 'video', src: '/public/Resin Frames/03.mp4' }
+      { type: 'video', src: '/Resin Frames/03.mp4' }
     ],
     category: 'resin-frames',
     resinFrameType: 'navkar',
@@ -47,7 +47,7 @@ export const products: Product[] = [
     price: 54.99,
     description: 'Classic resin frame featuring Navkar Mantra for spiritual decor.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/06.jpg' }
+      { type: 'image', src: '/Resin Frames/06.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'wedding',
@@ -60,7 +60,7 @@ export const products: Product[] = [
     price: 64.99,
     description: 'Modern resin frame with abstract art design.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/14.jpg' }
+      { type: 'image', src: '/Resin Frames/14.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'wedding',
@@ -73,7 +73,7 @@ export const products: Product[] = [
     price: 69.99,
     description: 'Frame with golden resin accents for a luxurious look.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/07.jpg' }
+      { type: 'image', src: '/Resin Frames/07.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'wedding',
@@ -86,7 +86,7 @@ export const products: Product[] = [
     price: 44.99,
     description: 'Minimalist resin frame for a clean, modern aesthetic.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/08.jpg' }
+      { type: 'image', src: '/Resin Frames/08.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'wedding',
@@ -99,7 +99,7 @@ export const products: Product[] = [
     price: 57.99,
     description: 'Frame inspired by nature, featuring earthy resin tones.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/09.jpg' }
+      { type: 'image', src: '/Resin Frames/09.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'navkar',
@@ -112,7 +112,7 @@ export const products: Product[] = [
     price: 74.99,
     description: 'Premium resin frame with intricate detailing.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/10.jpg' }
+      { type: 'image', src: '/Resin Frames/10.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'anniversary',
@@ -125,7 +125,7 @@ export const products: Product[] = [
     price: 89.99,
     description: 'Handcrafted artisan resin frame, unique in every way.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/12.jpg' }
+      { type: 'image', src: '/Resin Frames/12.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'navkar',
@@ -139,7 +139,7 @@ export const products: Product[] = [
     price: 59.99,
     description: 'Elegant blue resin frame for a touch of color.',
     media: [
-       { type: 'video', src: '/public/Resin Frames/02.mp4' },
+       { type: 'video', src: '/Resin Frames/02.mp4' },
     ],
     category: 'resin-frames',
      resinFrameType: 'navkar',
@@ -152,7 +152,7 @@ export const products: Product[] = [
     price: 59.99,
     description: 'Elegant blue resin frame for a touch of color.',
     media: [
-       { type: 'video', src: '/public/Resin Frames/03.mp4' }
+       { type: 'video', src: '/Resin Frames/03.mp4' }
     ],
     category: 'resin-frames',
     isCustomizable: false,
@@ -164,7 +164,7 @@ export const products: Product[] = [
     price: 84.99,
     description: 'Personalized resin frame for your cherished photos. Perfect for gifting and memories.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/11.jpg' }
+      { type: 'image', src: '/Resin Frames/11.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'custom-photo',
@@ -177,7 +177,7 @@ export const products: Product[] = [
     price: 59.99,
     description: 'Elegant blue resin frame for a touch of color.',
     media: [
-      { type: 'image', src: '/public/Resin Frames/13.jpg' }
+      { type: 'image', src: '/Resin Frames/13.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'company-name',
@@ -191,7 +191,7 @@ export const products: Product[] = [
     name: 'Personalized Name Keychain',
     price: 19.99,
     description: 'Custom name keychain with glitter and color options.',
-    image: '/public/p3.jpg',
+    image: '/p3.jpg',
     category: 'keychains',
     isCustomizable: true,
     tags: ['keychain', 'personalized', 'gift']
@@ -201,7 +201,7 @@ export const products: Product[] = [
     name: 'Ocean Wave Keychain',
     price: 15.99,
     description: 'Beautiful ocean-inspired keychain with blue and white waves.',
-    image: '/public/p4.jpg',
+    image: '/p4.jpg',
     category: 'keychains',
     isCustomizable: true,
     tags: ['keychain', 'ocean', 'gift']
@@ -213,7 +213,7 @@ export const products: Product[] = [
     name: 'Deluxe Resin Gift Set',
     price: 149.99,
     description: 'Complete gift set including frame, keychain, and card.',
-    image: '/public/p1.jpg',
+    image: '/p1.jpg',
     category: 'gift-hampers',
     isCustomizable: true,
     tags: ['gift-set', 'premium', 'bundle']
@@ -223,7 +223,7 @@ export const products: Product[] = [
     name: 'Couples Gift Hamper',
     price: 99.99,
     description: 'Perfect gift set for couples with matching keychains and frame.',
-    image: '/public/p2.jpg',
+    image: '/p2.jpg',
     category: 'gift-hampers',
     isCustomizable: true,
     tags: ['gift-set', 'couples', 'bundle']
@@ -235,7 +235,7 @@ export const products: Product[] = [
     name: 'Resin Anniversary Card',
     price: 24.99,
     description: 'Handmade anniversary card with resin embellishments.',
-    image: '/public/p3.jpg',
+    image: '/p3.jpg',
     category: 'cards',
     isCustomizable: true,
     tags: ['card', 'anniversary', 'greeting']
@@ -245,7 +245,7 @@ export const products: Product[] = [
     name: 'Birthday Celebration Card',
     price: 22.99,
     description: 'Special birthday card with resin decorations and custom message.',
-    image: '/public/p4.jpg',
+    image: '/p4.jpg',
     category: 'cards',
     isCustomizable: true,
     tags: ['card', 'birthday', 'greeting']
@@ -257,7 +257,7 @@ export const products: Product[] = [
     name: 'Marble Effect Phone Case',
     price: 34.99,
     description: 'Elegant marble-look resin phone case, available for various models.',
-    image: '/public/p1.jpg',
+    image: '/p1.jpg',
     category: 'phone-cases',
     isCustomizable: true,
     tags: ['phone-case', 'marble', 'protection']
@@ -267,7 +267,7 @@ export const products: Product[] = [
     name: 'Ocean Wave Phone Case',
     price: 39.99,
     description: 'Beautiful ocean-inspired phone case with wave pattern.',
-    image: '/public/p2.jpg',
+    image: '/p2.jpg',
     category: 'phone-cases',
     isCustomizable: false,
     tags: ['phone-case', 'ocean', 'protection']
@@ -279,7 +279,7 @@ export const products: Product[] = [
     name: 'Varmala Preservation Wall Clock',
     price: 3699,
     description: 'You choose to preserve your wedding flowers in a beautiful wall clock. A perfect keepsake for your special day.',
-    image: '/public/Wall Clocks/01.jpg',
+    image: '/Wall Clocks/01.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'classic', 'roman'],
@@ -290,7 +290,7 @@ export const products: Product[] = [
     name: 'Wedding Flower Preservation Wall Clock',
     price: 3599,
     description: 'Transform your wedding flowers into a timeless wall clock. A perfect keepsake for your special day.',
-    image: '/public/Wall Clocks/02.jpg',
+    image: '/Wall Clocks/02.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'modern', 'minimalist'],
@@ -301,7 +301,7 @@ export const products: Product[] = [
     name: 'Mini Resin Wall Clock',
     price: 2689,
     description: 'Handcrafted resin wall clock with ocean blue waves, perfect for beach lovers.',
-    image: '/public/Wall Clocks/03.jpg',
+    image: '/Wall Clocks/03.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'ocean', 'resin'],
@@ -312,7 +312,7 @@ export const products: Product[] = [
     name: 'Customised Photo Wall Clock',
     price: 3599,
     description: 'Luxurious wall clock with golden marble resin art, adds a touch of elegance to any room.',
-    image: '/public/Wall Clocks/04.jpg',
+    image: '/Wall Clocks/04.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'marble', 'gold'],
@@ -323,7 +323,7 @@ export const products: Product[] = [
     name: 'Minimalist Wall Clock',
     price: 3399,
     description: 'Beautiful wall clock featuring real pressed flowers in resin, perfect for nature lovers.',
-    image: '/public/Wall Clocks/05.jpg',
+    image: '/Wall Clocks/05.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'floral', 'nature'],
@@ -334,7 +334,7 @@ export const products: Product[] = [
     name: 'Marble Effect Resin Wall Clock',
     price: 4599,
     description: 'Unique abstract art wall clock with vibrant resin colors.',
-    image: '/public/Wall Clocks/06.jpg',
+    image: '/Wall Clocks/06.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'abstract', 'art'],
@@ -345,7 +345,7 @@ export const products: Product[] = [
     name: 'Modern Brown Wall Clock',
     price: 2999,
     description: 'Luxurious wall clock with golden marble resin art, adds a touch of elegance to any room.',
-    image: '/public/Wall Clocks/07.jpg',
+    image: '/Wall Clocks/07.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'vintage', 'map'],
@@ -356,7 +356,7 @@ export const products: Product[] = [
   //   name: 'Galaxy Resin Wall Clock',
   //   price: 3699,
   //   description: 'Stunning galaxy-inspired resin wall clock with shimmering details.',
-  //   image: '/public/Wall Clocks/08.jpg',
+  //   image: '/Wall Clocks/08.jpg',
   //   category: 'wallClocks',
   //   isCustomizable: true,
   //   tags: ['wall-clock', 'galaxy', 'space'],
@@ -367,7 +367,7 @@ export const products: Product[] = [
     name: 'Subtle Wall Clock',
     price: 4499,
     description: 'Warm sunset colors in resin art make this wall clock a cozy addition to any space.',
-    image: '/public/Wall Clocks/09.jpg',
+    image: '/Wall Clocks/09.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'sunset', 'warm'],
@@ -378,7 +378,7 @@ export const products: Product[] = [
     name: 'Company Logo Wall Clock',
     price: 2899,
     description: 'Chic black and white resin wall clock for a modern, stylish look.',
-    image: '/public/Wall Clocks/10.jpg',
+    image: '/Wall Clocks/10.jpg',
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'monochrome', 'chic'],

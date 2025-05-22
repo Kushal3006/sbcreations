@@ -4,17 +4,12 @@ import { Link } from './ui/Link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import p1 from '/public/p1.jpg';
-import p2 from '/public/p2.jpg';
-import p3 from '/public/p3.jpg';
-import p4 from '/public/p4.jpg';
 
-// Temporarily keep some external images until more local images are added
 const images = [
-  p1, // Local image from assets
-  p2,
-  p3,
-  p4
+  '/p1.jpg',
+  '/p2.jpg',
+  '/p3.jpg',
+  '/p4.jpg',
 ];
 
 const Hero: React.FC = () => {
