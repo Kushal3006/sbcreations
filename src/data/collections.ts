@@ -6,7 +6,7 @@ export const collections: Collection[] = [
     title: 'Resin Frames',
     subtitle: 'Elegant picture frames and wall art',
     shortDescription: 'Beautiful handcrafted resin frames that turn your memories into stunning wall art.',
-    image: '/assets/p1.jpg',
+    image: '/public/p1.jpg',
     path: '/products/resin-frames'
   },
   {
@@ -14,7 +14,7 @@ export const collections: Collection[] = [
     title: 'Keychains',
     subtitle: 'Personalized resin keychains',
     shortDescription: 'Unique and customizable keychains that add a personal touch to your everyday carry.',
-    image: '/assets/p5.jpg',
+    image: '/public/p5.jpg',
     path: '/products/keychains'
   },
   {
@@ -22,7 +22,7 @@ export const collections: Collection[] = [
     title: 'Gift Hampers',
     subtitle: 'Curated gift collections',
     shortDescription: 'Thoughtfully curated gift hampers featuring our most beloved resin creations.',
-    image: '/assets/p6.jpg',
+    image: '/public/p6.jpg',
     path: '/products/gift-hampers'
   },
   {
@@ -30,7 +30,7 @@ export const collections: Collection[] = [
     title: 'Wall Clocks',
     subtitle: 'Handmade resin wall clocks',
     shortDescription: 'Functional art pieces that add a touch of elegance to your home decor.',
-    image: '/assets/p2.jpg',
+    image: '/public/p2.jpg',
     path: '/products/wallClocks'
   },
   {
@@ -38,7 +38,7 @@ export const collections: Collection[] = [
     title: 'Phone Cases',
     subtitle: 'Custom resin phone cases',
     shortDescription: 'Protect your phone in style with our custom-designed resin phone cases.',
-    image: '/assets/p4.jpg',
+    image: '/public/p4.jpg',
     path: '/products/phone-cases'
   },
   {
@@ -46,7 +46,7 @@ export const collections: Collection[] = [
     title: 'Gift idea',
     subtitle: 'Gift idea for your loved ones',
     shortDescription: 'Thoughtfully curated gift hampers featuring our most beloved resin creations.',
-    image: '/assets/p2.jpg',
+    image: '/public/p2.jpg',
     path: '/products/gift-idea'
   }
 ];

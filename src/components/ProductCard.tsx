@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {product.media && product.media.length > 0 ? (
           product.media[0].type === 'video' ? (
             <video
-              src={product.media[0].src}
+              src={product.media[0].src.startsWith('/public/') ? product.media[0].src : `/public/${product.media[0].src}`}
               autoPlay
               muted
               loop
@@ -38,7 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             />
           ) : (
             <img
-              src={product.media[0].src.startsWith('/assets/') ? product.media[0].src : `/assets/${product.media[0].src}`}
+              src={product.media[0].src.startsWith('/public/') ? product.media[0].src : `/public/${product.media[0].src}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}
@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         ) : (
           product.image && (
             <img
-              src={product.image.startsWith('/assets/') ? product.image : `/assets/${product.image}`}
+              src={product.image.startsWith('/public/') ? product.image : `/public/${product.image}`}
               alt={product.name}
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 rounded"
               style={{ background: '#fff' }}

@@ -4,10 +4,10 @@ import { Link } from './ui/Link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import p1 from '../../assets/p1.jpg';
-import p2 from '../../assets/p2.jpg';
-import p3 from '../../assets/p3.jpg';
-import p4 from '../../assets/p4.jpg';
+import p1 from '/public/p1.jpg';
+import p2 from '/public/p2.jpg';
+import p3 from '/public/p3.jpg';
+import p4 from '/public/p4.jpg';
 
 // Temporarily keep some external images until more local images are added
 const images = [
