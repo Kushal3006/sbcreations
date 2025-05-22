@@ -5,11 +5,11 @@ import { useLocation, Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 
 const resinFrameTypes = [
-  { key: 'wedding', label: 'Wedding Frames' },
-  { key: 'anniversary', label: 'Special Anniversary Frames' },
-  { key: 'navkar', label: 'Navkar Mantra Frames' },
-  { key: 'custom-photo', label: 'Custom Photo Frames' },
-  { key: 'company-name', label: 'Company Name Frames' }
+  { key: 'Photo', label: 'Photo Frames' },
+  // { key: 'anniversary', label: 'Special Anniversary Frames' },
+  { key: 'Mantra', label: 'Mantra Frames' },
+  // { key: 'custom-photo', label: 'Custom Photo Frames' },
+  // { key: 'company-name', label: 'Company Name Frames' }
 ];
 
 const ProductCatalog: React.FC = () => {
@@ -67,7 +67,7 @@ const ProductCatalog: React.FC = () => {
                 <h3 className="text-2xl md:text-3xl font-serif font-semibold text-[#6B5B45] mb-6 border-l-4 border-[#8B7355] pl-4">
                   {section.label}
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div className="grid grid-cols-3 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 md:gap-8 items-stretch">
                   {sectionProducts.map(product => (
                     <ProductCard key={product.id} product={product} />
                   ))}
@@ -110,7 +110,7 @@ const ProductCatalog: React.FC = () => {
             No products found in this category.
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 md:gap-8 items-stretch">
             {filteredProducts.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}

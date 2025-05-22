@@ -4,185 +4,186 @@ export const products: Product[] = [
   // Resin Frames
   {
     id: 'rf1',
-    name: 'Wedding Ocean Wave Frame',
-    price: 49.99,
+    name: 'Navkar Mantra Frame',
+    price: 8999,
     description: 'Beautiful resin frame with ocean wave pattern, perfect for wedding memories.',
     media: [
       { type: 'image', src: '/Resin Frames/01.jpg' },
     ],
     category: 'resin-frames',
-    resinFrameType: 'navkar',
+    resinFrameType: 'Mantra',
     isCustomizable: false,
-    tags: ['frame', 'ocean', 'wedding']
+    tags: ['frame', 'ocean', 'wedding'],
+    sizeInches:22
   },
   {
     id: 'rf2',
-    name: 'Special Anniversary Floral Frame',
-    price: 59.99,
+    name: 'Couple Photo Frame',
+    price: 699,
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
       { type: 'image', src: '/Resin Frames/04.jpg' },
     ],
     category: 'resin-frames',
-    resinFrameType: 'anniversary',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'floral', 'anniversary']
+    tags: ['frame', 'floral', 'anniversary'],
+    sizeInches:5
   },
   {
     id: 'rf2',
-    name: 'Special Anniversary Floral Frame',
-    price: 59.99,
+    name: 'Mantra Frame',
+    price: 499,
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
-      { type: 'video', src: '/Resin Frames/03.mp4' }
+      { type: 'video', src: '/Resin Frames/v2.mp4' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'navkar',
+    resinFrameType: 'Mantra',
     isCustomizable: false,
-    tags: ['frame', 'floral', 'anniversary']
+    tags: ['frame', 'floral', 'anniversary'],
+    sizeInches:4
   },
   {
     id: 'rf3',
-    name: 'Navkar Mantra Frame',
-    price: 54.99,
+    name: 'Wedding Flower Frame',
+    price: 2100,
     description: 'Classic resin frame featuring Navkar Mantra for spiritual decor.',
     media: [
       { type: 'image', src: '/Resin Frames/06.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'wedding',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'navkar', 'spiritual']
+    tags: ['frame', 'navkar', 'spiritual'],
+    sizeInches:"9 By 12"
   },
   {
     id: 'rf4',
-    name: 'Modern Art Frame',
-    price: 64.99,
+    name: 'Varmala Preservation Frame',
+    price: 2100,
     description: 'Modern resin frame with abstract art design.',
     media: [
       { type: 'image', src: '/Resin Frames/14.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'wedding',
+    resinFrameType: 'Photo',
     isCustomizable: false,
+    sizeInches:"9 By 12",
     tags: ['frame', 'modern', 'abstract']
   },
   {
     id: 'rf5',
-    name: 'Golden Touch Frame',
-    price: 69.99,
+    name: 'Wedding Garland Frame',
+    price: 2599,
     description: 'Frame with golden resin accents for a luxurious look.',
     media: [
       { type: 'image', src: '/Resin Frames/07.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'wedding',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'gold', 'luxury']
+    tags: ['frame', 'gold', 'luxury'],
+    sizeInches:10
   },
   {
     id: 'rf6',
-    name: 'Minimalist Resin Frame',
-    price: 44.99,
+    name: 'Single Rose Frame',
+    price: 1599,
     description: 'Minimalist resin frame for a clean, modern aesthetic.',
     media: [
       { type: 'image', src: '/Resin Frames/08.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'wedding',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'minimalist', 'modern']
+    tags: ['frame', 'minimalist', 'modern'],
+    sizeInches:10
   },
   {
     id: 'rf7',
-    name: 'Nature Inspired Frame',
-    price: 57.99,
+    name: 'Mantra Frame',
+    price: 699,
     description: 'Frame inspired by nature, featuring earthy resin tones.',
     media: [
       { type: 'image', src: '/Resin Frames/09.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'navkar',
+    resinFrameType: 'Mantra',
     isCustomizable: false,
-    tags: ['frame', 'nature', 'earth']
+    tags: ['frame', 'nature', 'earth'],
+    sizeInches:5
   },
   {
     id: 'rf8',
-    name: 'Luxury Resin Frame',
-    price: 74.99,
+    name: 'Memories preservation Frame',
+    price: 1899,
     description: 'Premium resin frame with intricate detailing.',
     media: [
       { type: 'image', src: '/Resin Frames/10.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'anniversary',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'luxury', 'detailed']
+    tags: ['frame', 'luxury', 'detailed'],
+    sizeInches:10
   },
   {
     id: 'rf10',
-    name: 'Artisan Resin Frame',
-    price: 89.99,
+    name: 'Mantra Frame',
+    price: 9799,
     description: 'Handcrafted artisan resin frame, unique in every way.',
     media: [
       { type: 'image', src: '/Resin Frames/12.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'navkar',
+    resinFrameType: 'Mantra',
     isCustomizable: false,
-    tags: ['frame', 'artisan', 'handmade']
+    tags: ['frame', 'artisan', 'handmade'],
+    sizeInches:"24 By 18"
   },
   
   {
     id: 'rf12',
-    name: 'Elegant Blue Frame',
-    price: 59.99,
+    name: 'Mantra Frame',
+    price: 499,
     description: 'Elegant blue resin frame for a touch of color.',
     media: [
-       { type: 'video', src: '/Resin Frames/02.mp4' },
+       { type: 'video', src: '/Resin Frames/v1.mp4' },
     ],
     category: 'resin-frames',
-     resinFrameType: 'navkar',
+     resinFrameType: 'Mantra',
     isCustomizable: false,
-    tags: ['frame', 'blue', 'elegant']
-  },
-  {
-    id: 'rf13',
-    name: 'Elegant Blue Frame',
-    price: 59.99,
-    description: 'Elegant blue resin frame for a touch of color.',
-    media: [
-       { type: 'video', src: '/Resin Frames/03.mp4' }
-    ],
-    category: 'resin-frames',
-    isCustomizable: false,
-    tags: ['frame', 'blue', 'elegant']
+    tags: ['frame', 'blue', 'elegant'],
+    sizeInches:4
   },
   {
     id: 'rf14',
     name: 'Custom Photo Frame',
-    price: 84.99,
+    price: 1799,
     description: 'Personalized resin frame for your cherished photos. Perfect for gifting and memories.',
     media: [
       { type: 'image', src: '/Resin Frames/11.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'custom-photo',
-    isCustomizable: true,
-    tags: ['frame', 'custom', 'photo', 'personalized']
+    resinFrameType: 'Photo',
+    isCustomizable: false,
+    tags: ['frame', 'custom', 'photo', 'personalized'],
+    sizeInches:10
   },
   {
     id: 'rf11',
-    name: 'Elegant Blue Frame',
-    price: 59.99,
+    name: 'Company Name Frame',
+    price: 1699,
     description: 'Elegant blue resin frame for a touch of color.',
     media: [
       { type: 'image', src: '/Resin Frames/13.jpg' }
     ],
     category: 'resin-frames',
-    resinFrameType: 'company-name',
+    resinFrameType: 'Photo',
     isCustomizable: false,
-    tags: ['frame', 'blue', 'elegant']
+    tags: ['frame', 'blue', 'elegant'],
+    sizeInches:10
   },
 
   // Keychains
@@ -253,24 +254,134 @@ export const products: Product[] = [
 
   // Phone Cases
   {
-    id: 'pc1',
-    name: 'Marble Effect Phone Case',
-    price: 34.99,
-    description: 'Elegant marble-look resin phone case, available for various models.',
-    image: '/p1.jpg',
-    category: 'phone-cases',
-    isCustomizable: true,
-    tags: ['phone-case', 'marble', 'protection']
-  },
-  {
-    id: 'pc2',
-    name: 'Ocean Wave Phone Case',
-    price: 39.99,
-    description: 'Beautiful ocean-inspired phone case with wave pattern.',
-    image: '/p2.jpg',
+    id: 'pc_img_01',
+    name: 'Triple Style Combo – Set of 3 Phone Cases',
+    price: 699,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/01.jpg' } ],
     category: 'phone-cases',
     isCustomizable: false,
-    tags: ['phone-case', 'ocean', 'protection']
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_02',
+    name: 'Resin Phone Case',
+    price: 749,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/02.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_03',
+    name: 'Custom Asthetic Phone Case',
+    price: 699,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/03.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_04',
+    name: 'Twinning Phone Case',
+    price: 499,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/04.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_05',
+    name: 'Minimalist Transparent Design Case',
+    price: 749,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/05.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom'] 
+  },
+  {
+    id: 'pc_img_06',
+    name: 'Flower Pressed Resin Phone Case',
+    price: 749,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/06.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_07',
+    name: 'Your vibe Phone Case',
+    price: 699,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/07.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_08',
+    name: 'Paper Asthetic Phone Case',
+    price: 699,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/08.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_09',
+    name: 'Embroidery Phone Case',
+    price: 549,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/09.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_img_10',
+    name: 'Opaque with glitter effect',
+    price: 749,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/10.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+  {
+    id: 'pc_vid_11',
+    name: 'Personalised Quote Phone case',
+    price: 699,
+    description: 'Video preview of resin phone case.',
+    media: [ { type: 'video', src: '/Phone case/11.mp4' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom', 'video']
+  },
+  {
+    id: 'pc_vid_12',
+    name: 'Minimal Luxe Phone Case',
+    price: 699,
+    description: 'Video preview of resin phone case.',
+    media: [ { type: 'video', src: '/Phone case/12.mp4' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom', 'video']
+  },
+  {
+    id: 'pc_vid_13',
+    name: 'Asthetic Phone case',
+    price: 699,
+    description: 'Video preview of resin phone case.',
+    media: [ { type: 'video', src: '/Phone case/13.mp4' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom', 'video']
   },
 
   // Wall Clocks
@@ -382,6 +493,6 @@ export const products: Product[] = [
     category: 'wallClocks',
     isCustomizable: false,
     tags: ['wall-clock', 'monochrome', 'chic'],
-    sizeInches: 12
+    sizeInches: 14
   }
 ];

@@ -13,7 +13,8 @@ const productSchema = new mongoose.Schema({
   isCustomizable: { type: Boolean, default: false },
   tags: [String],
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
+  sizeInches: "number",
 });
 
 export default mongoose.models.Product || mongoose.model('Product', productSchema);

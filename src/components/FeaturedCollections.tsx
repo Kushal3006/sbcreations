@@ -17,25 +17,25 @@ const FeaturedCollections: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {collections.map((collection) => (
             <Link 
               key={collection.id}
               href={collection.path}
-              className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2 bg-white"
             >
               <div className="aspect-w-4 aspect-h-3">
                 <img
                   src={collection.image}
                   alt={collection.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-t-xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent rounded-t-xl"></div>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-serif font-bold mb-2">{collection.title}</h3>
-                <p className="text-sm text-white/90 mb-4">{collection.subtitle}</p>
-                <div className="flex items-center text-sm font-medium text-white/90 group-hover:text-white transition-colors">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
+                <h3 className="text-base sm:text-xl font-serif font-bold mb-1 sm:mb-2">{collection.title}</h3>
+                <p className="text-xs sm:text-sm text-white/90 mb-2 sm:mb-4">{collection.subtitle}</p>
+                <div className="flex items-center text-xs sm:text-sm font-medium text-white/90 group-hover:text-white transition-colors">
                   <span>Browse Collection</span>
                   <ChevronRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
                 </div>
