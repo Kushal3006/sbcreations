@@ -9,12 +9,16 @@ export const products: Product[] = [
     description: 'Beautiful resin frame with ocean wave pattern, perfect for wedding memories.',
     media: [
       { type: 'image', src: '/Resin Frames/01.jpg' },
+      { type: 'image', src: '/Resin Frames/02.jpg' },
+      { type: 'image', src: '/Resin Frames/03.jpg' },
+      { type: 'image', src: '/Resin Frames/04.jpg' },
+      { type: 'image', src: '/Resin Frames/05.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Mantra',
     isCustomizable: false,
     tags: ['frame', 'ocean', 'wedding'],
-    sizeInches:22
+    sizeInches: 22
   },
   {
     id: 'rf2',
@@ -23,12 +27,28 @@ export const products: Product[] = [
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
       { type: 'image', src: '/Resin Frames/04.jpg' },
+      { type: 'image', src: '/Resin Frames/05.jpg' },
+      { type: 'image', src: '/Resin Frames/06.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
     isCustomizable: false,
     tags: ['frame', 'floral', 'anniversary'],
-    sizeInches:5
+    sizeInches: 5
+  },
+  {
+    id: 'rf7',
+    name: 'Rose Couple resin Frame',
+    price: 1699,
+    description: 'Frame inspired by nature, featuring earthy resin tones.',
+    media: [
+      { type: 'image', src: '/Resin Frames/16.jpg' }
+    ],
+    category: 'resin-frames',
+    resinFrameType: 'Photo',
+    isCustomizable: false,
+    tags: ['frame', 'nature', 'earth'],
+    sizeInches:8
   },
   {
     id: 'rf2',
@@ -42,7 +62,7 @@ export const products: Product[] = [
     resinFrameType: 'Mantra',
     isCustomizable: false,
     tags: ['frame', 'floral', 'anniversary'],
-    sizeInches:4
+    sizeInches: 4
   },
   {
     id: 'rf3',
@@ -106,7 +126,35 @@ export const products: Product[] = [
     price: 699,
     description: 'Frame inspired by nature, featuring earthy resin tones.',
     media: [
-      { type: 'image', src: '/Resin Frames/09.jpg' }
+      { type: 'image', src: '/Resin Frames/02.jpg' }
+    ],
+    category: 'resin-frames',
+    resinFrameType: 'Mantra',
+    isCustomizable: false,
+    tags: ['frame', 'nature', 'earth'],
+    sizeInches:5
+  },
+  {
+    id: 'rf7',
+    name: 'Mantra Frame',
+    price: 699,
+    description: 'Frame inspired by nature, featuring earthy resin tones.',
+    media: [
+      { type: 'image', src: '/Resin Frames/03.jpg' }
+    ],
+    category: 'resin-frames',
+    resinFrameType: 'Mantra',
+    isCustomizable: false,
+    tags: ['frame', 'nature', 'earth'],
+    sizeInches:5
+  },
+  {
+    id: 'rf7',
+    name: 'Mantra Frame',
+    price: 699,
+    description: 'Frame inspired by nature, featuring earthy resin tones.',
+    media: [
+      { type: 'image', src: '/Resin Frames/15.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Mantra',
@@ -255,10 +303,14 @@ export const products: Product[] = [
   // Phone Cases
   {
     id: 'pc_img_01',
-    name: 'Triple Style Combo – Set of 3 Phone Cases',
+    name: 'Triple Style Combo – Set of 3 Phone Cases',
     price: 699,
     description: 'Unique resin phone case design.',
-    media: [ { type: 'image', src: '/Phone case/01.jpg' } ],
+    media: [
+      { type: 'image', src: '/Phone case/01.jpg' },
+      { type: 'image', src: '/Phone case/02.jpg' },
+      { type: 'image', src: '/Phone case/03.jpg' }
+    ],
     category: 'phone-cases',
     isCustomizable: false,
     tags: ['phone-case', 'resin', 'custom']
@@ -268,7 +320,11 @@ export const products: Product[] = [
     name: 'Resin Phone Case',
     price: 749,
     description: 'Unique resin phone case design.',
-    media: [ { type: 'image', src: '/Phone case/02.jpg' } ],
+    media: [
+      { type: 'image', src: '/Phone case/04.jpg' },
+      { type: 'image', src: '/Phone case/05.jpg' },
+      { type: 'image', src: '/Phone case/06.jpg' }
+    ],
     category: 'phone-cases',
     isCustomizable: false,
     tags: ['phone-case', 'resin', 'custom']
@@ -462,17 +518,6 @@ export const products: Product[] = [
     tags: ['wall-clock', 'vintage', 'map'],
     sizeInches: 12
   },
-  // {
-  //   id: 'wc8',
-  //   name: 'Galaxy Resin Wall Clock',
-  //   price: 3699,
-  //   description: 'Stunning galaxy-inspired resin wall clock with shimmering details.',
-  //   image: '/Wall Clocks/08.jpg',
-  //   category: 'wallClocks',
-  //   isCustomizable: true,
-  //   tags: ['wall-clock', 'galaxy', 'space'],
-  //   sizeInches: 14
-  // },
   {
     id: 'wc9',
     name: 'Subtle Wall Clock',
