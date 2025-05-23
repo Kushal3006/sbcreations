@@ -56,7 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         )}
       </div>
       <div className="p-2 flex flex-col flex-grow">
-        <h3 className="text-xs xs:text-sm sm:text-base font-semibold text-[#8B7355] min-h-[1.8rem] flex items-center break-words text-center w-full mx-auto">
+        <h3 className="text-xs xs:text-sm sm:text-base font-semibold text-[#8B7355] min-h-[1.8rem] flex justify-center items-center break-words text-center">
           {product.name}
         </h3>
         {product.sizeInches && (
