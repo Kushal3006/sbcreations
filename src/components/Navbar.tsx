@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 flex items-center justify-between">
         <div className="flex flex-col items-center">
           <Link to="/" className="flex items-center px-1 py-1 rounded hover:bg-transparent transition-colors duration-200">
-            <img src="/L.png" alt="sbcreations logo" className="h-10 w-auto sm:h-10 mb-1" />
+            <img src="/L.png" alt="sbcreations logo" className="h-16 w-auto sm:h-20 md:h-24 lg:h-28 xl:h-32 max-h-32 mb-1 drop-shadow-lg transition-all duration-300" />
           </Link>
           <span className="text-xs sm:text-sm text-[#8B7355] font-serif tracking-wide mt-0.5" style={{letterSpacing: '0.05em'}}>by Saloni Bafna</span>
         </div>
