@@ -9,10 +9,6 @@ export const products: Product[] = [
     description: 'Beautiful resin frame with ocean wave pattern, perfect for wedding memories.',
     media: [
       { type: 'image', src: '/Resin Frames/01.jpg' },
-      { type: 'image', src: '/Resin Frames/02.jpg' },
-      { type: 'image', src: '/Resin Frames/03.jpg' },
-      { type: 'image', src: '/Resin Frames/04.jpg' },
-      { type: 'image', src: '/Resin Frames/05.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Mantra',
@@ -27,8 +23,6 @@ export const products: Product[] = [
     description: 'Elegant resin frame with preserved real flowers for anniversaries.',
     media: [
       { type: 'image', src: '/Resin Frames/04.jpg' },
-      { type: 'image', src: '/Resin Frames/05.jpg' },
-      { type: 'image', src: '/Resin Frames/06.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -42,7 +36,10 @@ export const products: Product[] = [
     price: 1699,
     description: 'Frame inspired by nature, featuring earthy resin tones.',
     media: [
-      { type: 'image', src: '/Resin Frames/16.jpg' }
+      { type: 'image', src: '/Resin Frames/16.jpg' },
+      { type: 'image', src: '/Resin Frames/1601.jpg' },
+      { type: 'image', src: '/Resin Frames/1602.jpg' },
+      { type: 'image', src: '/Resin Frames/1603.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -70,7 +67,11 @@ export const products: Product[] = [
     price: 2100,
     description: 'Classic resin frame featuring Navkar Mantra for spiritual decor.',
     media: [
-      { type: 'image', src: '/Resin Frames/06.jpg' }
+      { type: 'image', src: '/Resin Frames/06.jpg' },
+      { type: 'image', src: '/Resin Frames/0601.jpg' },
+      { type: 'image', src: '/Resin Frames/0602.jpg' },
+      { type: 'image', src: '/Resin Frames/0603.jpg' }
+
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -84,7 +85,8 @@ export const products: Product[] = [
     price: 2100,
     description: 'Modern resin frame with abstract art design.',
     media: [
-      { type: 'image', src: '/Resin Frames/14.jpg' }
+      { type: 'image', src: '/Resin Frames/14.jpg' },
+      { type: 'image', src: '/Resin Frames/1401.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -98,7 +100,12 @@ export const products: Product[] = [
     price: 2599,
     description: 'Frame with golden resin accents for a luxurious look.',
     media: [
-      { type: 'image', src: '/Resin Frames/07.jpg' }
+      { type: 'image', src: '/Resin Frames/07.jpg' },
+      { type: 'image', src: '/Resin Frames/0701.jpg' },
+      { type: 'image', src: '/Resin Frames/0702.jpg' },
+      { type: 'image', src: '/Resin Frames/0703.jpg' },
+      { type: 'image', src: '/Resin Frames/0704.jpg' },
+      { type: 'image', src: '/Resin Frames/0705.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -112,7 +119,9 @@ export const products: Product[] = [
     price: 1599,
     description: 'Minimalist resin frame for a clean, modern aesthetic.',
     media: [
-      { type: 'image', src: '/Resin Frames/08.jpg' }
+      { type: 'image', src: '/Resin Frames/08.jpg' },
+      { type: 'image', src: '/Resin Frames/0801.jpg' },
+      { type: 'image', src: '/Resin Frames/0802.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -168,7 +177,8 @@ export const products: Product[] = [
     price: 1899,
     description: 'Premium resin frame with intricate detailing.',
     media: [
-      { type: 'image', src: '/Resin Frames/10.jpg' }
+      { type: 'image', src: '/Resin Frames/10.jpg' },
+      { type: 'image', src: '/Resin Frames/1001.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -211,7 +221,8 @@ export const products: Product[] = [
     price: 1799,
     description: 'Personalized resin frame for your cherished photos. Perfect for gifting and memories.',
     media: [
-      { type: 'image', src: '/Resin Frames/11.jpg' }
+      { type: 'image', src: '/Resin Frames/11.jpg' },
+      { type: 'image', src: '/Resin Frames/1101.jpg' }
     ],
     category: 'resin-frames',
     resinFrameType: 'Photo',
@@ -304,26 +315,13 @@ export const products: Product[] = [
   {
     id: 'pc_img_01',
     name: 'Triple Style Combo – Set of 3 Phone Cases',
-    price: 699,
+    price: 2100, // Discounted price
+    originalPrice: 2247, // Original price to show as strikethrough
     description: 'Unique resin phone case design.',
     media: [
       { type: 'image', src: '/Phone case/01.jpg' },
       { type: 'image', src: '/Phone case/02.jpg' },
       { type: 'image', src: '/Phone case/03.jpg' }
-    ],
-    category: 'phone-cases',
-    isCustomizable: false,
-    tags: ['phone-case', 'resin', 'custom']
-  },
-  {
-    id: 'pc_img_02',
-    name: 'Resin Phone Case',
-    price: 749,
-    description: 'Unique resin phone case design.',
-    media: [
-      { type: 'image', src: '/Phone case/04.jpg' },
-      { type: 'image', src: '/Phone case/05.jpg' },
-      { type: 'image', src: '/Phone case/06.jpg' }
     ],
     category: 'phone-cases',
     isCustomizable: false,
@@ -342,7 +340,8 @@ export const products: Product[] = [
   {
     id: 'pc_img_04',
     name: 'Twinning Phone Case',
-    price: 499,
+    price: 1399, // Discounted price
+    originalPrice: 1498, // Original price to show as strikethrough
     description: 'Unique resin phone case design.',
     media: [ { type: 'image', src: '/Phone case/04.jpg' } ],
     category: 'phone-cases',
@@ -389,22 +388,13 @@ export const products: Product[] = [
     isCustomizable: false,
     tags: ['phone-case', 'resin', 'custom']
   },
+ 
   {
-    id: 'pc_img_09',
-    name: 'Embroidery Phone Case',
-    price: 549,
+    id: 'pc_img_14',
+    name: 'Asthetic Phone case',
+    price: 699,
     description: 'Unique resin phone case design.',
-    media: [ { type: 'image', src: '/Phone case/09.jpg' } ],
-    category: 'phone-cases',
-    isCustomizable: false,
-    tags: ['phone-case', 'resin', 'custom']
-  },
-  {
-    id: 'pc_img_10',
-    name: 'Opaque with glitter effect',
-    price: 749,
-    description: 'Unique resin phone case design.',
-    media: [ { type: 'image', src: '/Phone case/10.jpg' } ],
+    media: [ { type: 'image', src: '/Phone case/11.jpg' } ],
     category: 'phone-cases',
     isCustomizable: false,
     tags: ['phone-case', 'resin', 'custom']
@@ -438,6 +428,27 @@ export const products: Product[] = [
     category: 'phone-cases',
     isCustomizable: false,
     tags: ['phone-case', 'resin', 'custom', 'video']
+  },
+  
+  {
+    id: 'pc_img_10',
+    name: 'Opaque with glitter effect',
+    price: 749,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/10.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
+  },
+   {
+    id: 'pc_img_09',
+    name: 'Embroidery Phone Case',
+    price: 549,
+    description: 'Unique resin phone case design.',
+    media: [ { type: 'image', src: '/Phone case/09.jpg' } ],
+    category: 'phone-cases',
+    isCustomizable: false,
+    tags: ['phone-case', 'resin', 'custom']
   },
 
   // Wall Clocks

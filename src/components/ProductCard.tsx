@@ -81,7 +81,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.description}
           </p>
           <div className="flex flex-col items-center justify-between gap-1 mt-auto w-full">
-            <span className="text-sm xs:text-base font-bold text-[#8B7355] mb-1">₹{product.price}</span>
+            {product.originalPrice ? (
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs xs:text-sm sm:text-base text-gray-400 line-through">₹{product.originalPrice}</span>
+                <span className="text-sm xs:text-base font-bold text-[#8B7355]">₹{product.price}</span>
+              </div>
+            ) : (
+              <span className="text-sm xs:text-base font-bold text-[#8B7355] mb-1">₹{product.price}</span>
+            )}
             <button
               className="px-2 py-1 xs:px-3 xs:py-1.5 sm:px-4 sm:py-2 bg-green-600 text-[10px] xs:text-xs sm:text-sm text-white rounded-full hover:bg-green-700 transition-colors duration-300 w-full font-semibold shadow-md"
               onClick={handleWhatsAppOrder}

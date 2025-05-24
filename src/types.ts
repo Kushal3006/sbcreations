@@ -2,6 +2,7 @@ export interface Product {
   id: string;
   name: string;
   price: number;
+  originalPrice?: number; // Optional: for showing strikethrough price
   description: string;
   image?: string; // deprecated, use media
   media?: Array<{ type: 'image' | 'video', src: string }>;

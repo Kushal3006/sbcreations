@@ -11,12 +11,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-[#ece7e1] shadow-sm py-2 sm:py-3 min-h-[48px] transition-all duration-300">
+    <header className="sticky top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-none border-none shadow-none py-2 sm:py-3 min-h-[48px] transition-all duration-300">
       <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 flex items-center justify-between">
-        <div className="flex items-center">
-          <Link to="/" className="text-lg xs:text-xl sm:text-2xl font-serif font-bold tracking-wide text-[#8B7355] px-1 py-1 rounded hover:bg-[#f5f5dc] transition-colors duration-200">
-            sbcreations
+        <div className="flex flex-col items-center">
+          <Link to="/" className="flex items-center px-1 py-1 rounded hover:bg-transparent transition-colors duration-200">
+            <img src="/L.png" alt="sbcreations logo" className="h-10 w-auto sm:h-10 mb-1" />
           </Link>
+          <span className="text-xs sm:text-sm text-[#8B7355] font-serif tracking-wide mt-0.5" style={{letterSpacing: '0.05em'}}>by Salloni Bafna</span>
         </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-3 xs:space-x-4 sm:space-x-6 lg:space-x-8">
@@ -29,7 +30,7 @@ const Navbar: React.FC = () => {
         </nav>
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-[#8B7355] rounded hover:bg-[#f5f5dc] focus:outline-none focus:ring-2 focus:ring-[#8B7355] transition-all duration-200"
+          className="md:hidden p-2 text-[#8B7355] rounded hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B7355] transition-all duration-200"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
