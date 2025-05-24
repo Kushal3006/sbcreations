@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center px-1 py-1 rounded hover:bg-transparent transition-colors duration-200">
             <img src="/L.png" alt="sbcreations logo" className="h-10 w-auto sm:h-10 mb-1" />
           </Link>
-          <span className="text-xs sm:text-sm text-[#8B7355] font-serif tracking-wide mt-0.5" style={{letterSpacing: '0.05em'}}>by Salloni Bafna</span>
+          <span className="text-xs sm:text-sm text-[#8B7355] font-serif tracking-wide mt-0.5" style={{letterSpacing: '0.05em'}}>by Saloni Bafna</span>
         </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-3 xs:space-x-4 sm:space-x-6 lg:space-x-8">

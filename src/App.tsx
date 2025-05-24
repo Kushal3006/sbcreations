@@ -14,7 +14,7 @@ import WallClocksCatalog from './components/WallClocksCatalog';
 
 const HomePage = () => (
   <>
-    <Hero />
+    {/* <Hero /> */}
     <div className='mt-5 '>
       <FeaturedCollections />
     </div>
