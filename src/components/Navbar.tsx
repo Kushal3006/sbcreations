@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
       </div>
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-x-0 top-[100%] bg-white/95 backdrop-blur border-b border-[#ece7e1] shadow-lg py-4 px-2 xs:px-3 sm:px-4 animate-fadeIn max-h-[80vh] overflow-y-auto w-full transition-all duration-300">
+        <div className="md:hidden fixed inset-x-0 top-0 bg-white/95 backdrop-blur border-b border-[#ece7e1] shadow-lg py-4 px-2 xs:px-3 sm:px-4 animate-fadeIn max-h-[80vh] overflow-y-auto w-full transition-all duration-300 z-40">
           <nav className="flex flex-col space-y-2">
             <Link to="/products/resin-frames" className={`py-2 px-2 rounded text-base transition-colors duration-200 ${isActiveLink('/products/resin-frames') ? 'bg-[#f5f5dc] text-[#6B5B45] font-semibold' : 'text-[#8B7355] hover:bg-[#f5f5dc]'}`} onClick={() => setIsMenuOpen(false)}>Resin Frames</Link>
             <Link to="/products/keychains" className={`py-2 px-2 rounded text-base transition-colors duration-200 ${isActiveLink('/products/keychains') ? 'bg-[#f5f5dc] text-[#6B5B45] font-semibold' : 'text-[#8B7355] hover:bg-[#f5f5dc]'}`} onClick={() => setIsMenuOpen(false)}>Keychains</Link>

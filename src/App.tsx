@@ -19,8 +19,8 @@ const HomePage = () => (
       <FeaturedCollections />
     </div>
     {/* <AboutSection /> */}
-    <Testimonials />
     <InstagramFeed />
+    <Testimonials />
     {/* <Newsletter /> */}
   </>
 );
