@@ -36,19 +36,27 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
+          {/* Enhanced Logo Section */}
           <Link 
             to="/" 
-            className="flex flex-col items-center group"
+            className="flex items-center group relative overflow-hidden"
           >
-            <img 
-              src="/L.png" 
-              alt="sbcreations logo" 
-              className="h-16 w-auto sm:h-20 transition-transform duration-300 group-hover:scale-105" 
-            />
-            <span className="text-xs sm:text-sm text-[#8B7355] font-serif tracking-widest mt-1 opacity-90">
-              by Saloni Bafna
-            </span>
+            <div className="relative">
+              <img 
+                src="/Logo.png" 
+                alt="sbcreations logo" 
+                className="h-14 sm:h-16 md:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shine" />
+            </div>
+            <div className="ml-3 flex flex-col justify-center">
+              <span className="text-lg sm:text-xl md:text-2xl font-serif text-[#8B7355] font-semibold tracking-wide">
+                sbcreations
+              </span>
+              <span className="text-xs sm:text-sm text-[#8B7355]/80 font-serif tracking-wider">
+                by Saloni Bafna
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

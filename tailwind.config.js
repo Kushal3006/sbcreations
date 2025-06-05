@@ -10,12 +10,17 @@ export default {
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
         fadeInSlow: 'fadeIn 1s ease-in-out',
+        shine: 'shine 1.5s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
-        }
+        },
+        shine: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
       },
       colors: {
         teal: {
