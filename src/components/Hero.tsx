@@ -78,9 +78,9 @@ const Hero: React.FC = () => {
               className="space-y-3 sm:space-y-4"
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[#8B7355] leading-tight tracking-wide">
-                SBCREATION
+                SB CREATION
                 <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#A0937D] font-extralight mt-1 sm:mt-2 tracking-[0.15em] sm:tracking-[0.2em]">
-                  by Saloni Bafana
+                  by Saloni Bafna
                 </span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-[#8B7355]/70 max-w-md sm:max-w-lg mx-auto font-light leading-relaxed px-4">
@@ -224,7 +224,7 @@ const Hero: React.FC = () => {
                   </div>
                 </motion.button>
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
