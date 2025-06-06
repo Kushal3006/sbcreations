@@ -1,41 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/Button';
-import { Link } from './ui/Link';
-import { ChevronDown, Sparkles, Heart, Star } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Play } from 'lucide-react';
+import { motion } from 'framer-motion';
 
-const heroImages = [
+const featuredProducts = [
   {
-    src: '/p1.jpg',
-    title: 'Elegant Resin Frames',
-    subtitle: 'Preserve your precious memories'
+    id: 1,
+    image: '/p1.jpg',
+    title: 'Resin Frames',
+    price: 'From ₹499'
   },
   {
-    src: '/p2.jpg',
-    title: 'Handcrafted Wall Clocks',
-    subtitle: 'Functional art for your home'
+    id: 2,
+    image: '/p2.jpg',
+    title: 'Wall Clocks',
+    price: 'From ₹2,689'
   },
   {
-    src: '/p3.jpg',
-    title: 'Custom Phone Cases',
-    subtitle: 'Protect with style'
-  },
-  {
-    src: '/p4.jpg',
-    title: 'Personalized Keychains',
-    subtitle: 'Carry beauty everywhere'
+    id: 3,
+    image: '/p4.jpg',
+    title: 'Phone Cases',
+    price: 'From ₹549'
   }
 ];
 
 const Hero: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState(0);
 
   useEffect(() => {
-    setIsLoaded(true);
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
+      setCurrentProduct((prev) => (prev + 1) % featuredProducts.length);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -45,222 +40,172 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5F5DC] via-[#F5F5DC]/80 to-[#E6E6D4]">
-      {/* Background Image Carousel */}
-      <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="wait">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#F5F5DC] to-[#E8E8D8] overflow-hidden">
+      {/* Main Container */}
+      <div className="container mx-auto px-4 py-8 min-h-screen flex items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+          
+          {/* Left Content */}
           <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
-            className="absolute inset-0"
-          >
-            <img
-              src={heroImages[currentSlide].src}
-              alt={heroImages[currentSlide].title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        <motion.div
-          animate={{ 
-            y: [0, -20, 0],
-            rotate: [0, 5, 0]
-          }}
-          transition={{ 
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute top-20 left-10 opacity-30"
-        >
-          <Sparkles className="w-8 h-8 text-[#8B7355]" />
-        </motion.div>
-        
-        <motion.div
-          animate={{ 
-            y: [0, 15, 0],
-            rotate: [0, -5, 0]
-          }}
-          transition={{ 
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2
-          }}
-          className="absolute top-32 right-16 opacity-40"
-        >
-          <Heart className="w-6 h-6 text-[#8B7355]" />
-        </motion.div>
-
-        <motion.div
-          animate={{ 
-            y: [0, -10, 0],
-            x: [0, 5, 0]
-          }}
-          transition={{ 
-            duration: 7,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 4
-          }}
-          className="absolute bottom-32 left-20 opacity-35"
-        >
-          <Star className="w-7 h-7 text-[#8B7355]" />
-        </motion.div>
-      </div>
-
-      {/* Main Content */}
-      <div className="relative z-20 container mx-auto px-4 py-20 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="max-w-4xl mx-auto"
-        >
-          {/* Brand Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-6"
-          >
-            <Sparkles className="w-4 h-4 text-white mr-2" />
-            <span className="text-white text-sm font-medium">Handcrafted with Love</span>
-          </motion.div>
-
-          {/* Main Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight"
-          >
-            <span className="block">Beautiful</span>
-            <span className="block bg-gradient-to-r from-[#F5F5DC] to-[#E6E6D4] bg-clip-text text-transparent">
-              Resin Art
-            </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-              Creations
-            </span>
-          </motion.h1>
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
-            className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
-          >
-            Transform your precious memories into stunning handcrafted resin art pieces. 
-            Each creation is unique, just like your special moments.
-          </motion.p>
-
-          {/* Current Slide Info */}
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-8"
+            transition={{ duration: 0.8 }}
+            className="space-y-8 text-center lg:text-left"
           >
-            <h3 className="text-xl sm:text-2xl font-serif font-semibold text-white mb-2">
-              {heroImages[currentSlide].title}
-            </h3>
-            <p className="text-white/80 text-sm sm:text-base">
-              {heroImages[currentSlide].subtitle}
-            </p>
+            {/* Brand Tag */}
+            <div className="inline-flex items-center px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-[#8B7355]/20">
+              <span className="text-[#8B7355] text-sm font-medium">✨ Handcrafted Resin Art</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#8B7355] leading-tight">
+                Create Beautiful
+                <span className="block text-[#6B5B45]">Memories</span>
+              </h1>
+              <p className="text-lg text-[#6B5B45]/80 max-w-lg mx-auto lg:mx-0">
+                Transform your precious moments into stunning handcrafted resin art pieces.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button
+                onClick={scrollToCollections}
+                className="bg-[#8B7355] text-white hover:bg-[#6B5B45] px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+              >
+                Shop Now
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <button className="flex items-center justify-center px-8 py-4 text-[#8B7355] hover:text-[#6B5B45] font-semibold transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center mr-3 group-hover:bg-white transition-colors">
+                  <Play className="w-5 h-5 ml-1" />
+                </div>
+                Watch Process
+              </button>
+            </div>
+
+            {/* Quick Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#8B7355]/20">
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-[#8B7355]">1200+</div>
+                <div className="text-sm text-[#6B5B45]/70">Orders Delivered</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-[#8B7355]">150+</div>
+                <div className="text-sm text-[#6B5B45]/70">International</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-[#8B7355]">5.0★</div>
+                <div className="text-sm text-[#6B5B45]/70">Rating</div>
+              </div>
+            </div>
           </motion.div>
 
-          {/* CTA Buttons */}
+          {/* Right Content - Product Showcase */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.1 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative"
           >
-            <Button
-              onClick={scrollToCollections}
-              className="bg-white text-[#8B7355] hover:bg-[#F5F5DC] hover:text-[#6B5B45] px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-            >
-              Explore Collections
-            </Button>
-            <Link
-              href="https://wa.me/919054400512"
-              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#8B7355] rounded-full transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-lg font-semibold"
-            >
-              Custom Orders
-            </Link>
-          </motion.div>
+            {/* Main Product Display */}
+            <div className="relative">
+              <motion.div
+                key={currentProduct}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="relative bg-white rounded-3xl shadow-2xl overflow-hidden"
+              >
+                <div className="aspect-square">
+                  <img
+                    src={featuredProducts[currentProduct].image}
+                    alt={featuredProducts[currentProduct].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+                  <h3 className="text-white text-xl font-semibold mb-1">
+                    {featuredProducts[currentProduct].title}
+                  </h3>
+                  <p className="text-white/90 text-lg">
+                    {featuredProducts[currentProduct].price}
+                  </p>
+                </div>
+              </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.3 }}
-            className="grid grid-cols-3 gap-4 sm:gap-8 max-w-md mx-auto mb-8"
-          >
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-white">1200+</div>
-              <div className="text-xs sm:text-sm text-white/80">Happy Customers</div>
+              {/* Floating Elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#8B7355]/10 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-white/40 rounded-full blur-2xl"></div>
             </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-white">150+</div>
-              <div className="text-xs sm:text-sm text-white/80">International Orders</div>
+
+            {/* Product Navigation Dots */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {featuredProducts.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentProduct(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentProduct 
+                      ? 'bg-[#8B7355] scale-125' 
+                      : 'bg-[#8B7355]/30 hover:bg-[#8B7355]/50'
+                  }`}
+                />
+              ))}
             </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-white">5★</div>
-              <div className="text-xs sm:text-sm text-white/80">Customer Rating</div>
+
+            {/* Small Product Grid */}
+            <div className="grid grid-cols-3 gap-3 mt-8">
+              {featuredProducts.map((product, index) => (
+                <motion.button
+                  key={product.id}
+                  onClick={() => setCurrentProduct(index)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className={`aspect-square rounded-xl overflow-hidden border-2 transition-all duration-300 ${
+                    index === currentProduct 
+                      ? 'border-[#8B7355] shadow-lg' 
+                      : 'border-transparent hover:border-[#8B7355]/50'
+                  }`}
+                >
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover"
+                  />
+                </motion.button>
+              ))}
             </div>
           </motion.div>
-        </motion.div>
+        </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-20 right-20 w-40 h-40 bg-[#8B7355]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-60 h-60 bg-white/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-[#8B7355]/10 rounded-full blur-2xl"></div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <motion.button
+          onClick={scrollToCollections}
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="text-[#8B7355]/60 hover:text-[#8B7355] transition-colors duration-300"
         >
-          <motion.button
-            onClick={scrollToCollections}
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/80 hover:text-white transition-colors duration-300"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </motion.button>
-        </motion.div>
-      </div>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-30 flex space-x-2">
-        {heroImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/75'
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-[#8B7355]/20 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-0 w-16 h-16 bg-white/5 rounded-full blur-lg"></div>
-      </div>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </motion.button>
+      </motion.div>
     </section>
   );
 };
