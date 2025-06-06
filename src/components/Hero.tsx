@@ -224,7 +224,7 @@ const Hero: React.FC = () => {
                   </div>
                 </motion.button>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
