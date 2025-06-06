@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                 SB CREATION
               </span>
               <span className="text-xs sm:text-sm text-[#A0937D] font-serif tracking-[0.2em] font-extralight">
-                ART&CRAFT
+                RESIN ART & CRAFT
               </span>
             </div>
           </Link>
