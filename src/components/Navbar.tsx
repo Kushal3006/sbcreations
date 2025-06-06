@@ -50,12 +50,12 @@ const Navbar: React.FC = () => {
   return (
     <header 
       className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-pink-50/50' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Enhanced Logo Section */}
+          {/* Enhanced Logo Section with logo styling */}
           <Link 
             to="/" 
             className="flex items-center group relative overflow-hidden"
@@ -66,14 +66,14 @@ const Navbar: React.FC = () => {
                 alt="sbcreations logo" 
                 className="h-14 sm:h-16 md:h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shine" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             <div className="ml-3 flex flex-col justify-center">
-              <span className="text-lg sm:text-xl md:text-2xl font-serif text-[#8B7355] font-semibold tracking-wide">
-                sbcreations
+              <span className="text-lg sm:text-xl md:text-2xl font-serif text-[#8B7355] font-light tracking-[0.1em]">
+                SB CREATION
               </span>
-              <span className="text-xs sm:text-sm text-[#8B7355]/80 font-serif tracking-wider">
-                by Saloni Bafna
+              <span className="text-xs sm:text-sm text-[#A0937D] font-serif tracking-[0.2em] font-extralight">
+                ART&CRAFT
               </span>
             </div>
           </Link>
@@ -84,12 +84,12 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-200 hover:text-[#6B5B45] group ${
-                  isActiveLink(link.path) ? 'text-[#6B5B45]' : 'text-[#8B7355]'
+                className={`relative px-3 py-2 text-sm lg:text-base font-light tracking-wide transition-colors duration-200 hover:text-[#7A6449] group ${
+                  isActiveLink(link.path) ? 'text-[#7A6449]' : 'text-[#8B7355]'
                 }`}
               >
                 {link.label}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#8B7355] transform origin-left transition-transform duration-300 ${
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#8B7355] to-[#A0937D] transform origin-left transition-transform duration-300 ${
                   isActiveLink(link.path) ? 'scale-x-100' : 'scale-x-0'
                 } group-hover:scale-x-100`} />
               </Link>
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             ref={buttonRef}
-            className="md:hidden p-2 text-[#8B7355] rounded-full hover:bg-[#f5f5dc]/30 transition-colors duration-200"
+            className="md:hidden p-2 text-[#8B7355] rounded-full hover:bg-pink-50/50 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -119,10 +119,10 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block px-4 py-2 text-sm rounded-lg transition-colors duration-200 ${
+                className={`block px-4 py-2 text-sm rounded-lg transition-colors duration-200 font-light tracking-wide ${
                   isActiveLink(link.path)
-                    ? 'bg-[#f5f5dc]/50 text-[#6B5B45] font-medium'
-                    : 'text-[#8B7355] hover:bg-[#f5f5dc]/30'
+                    ? 'bg-pink-50/50 text-[#7A6449] font-normal'
+                    : 'text-[#8B7355] hover:bg-pink-50/30'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -15,7 +15,7 @@ import WallClocksCatalog from './components/WallClocksCatalog';
 const HomePage = () => (
   <>
     <Hero />
-    <div className='mt-5 '>
+    <div className='mt-0'>
       <FeaturedCollections />
     </div>
     {/* <AboutSection /> */}
@@ -28,7 +28,7 @@ const HomePage = () => (
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-[#F5F5DC]/10">
+      <div className="min-h-screen bg-gradient-to-br from-[#F8F6F3] via-[#F5F3F0] to-[#F2F0ED]">
         <Navbar />
         <main>
           <Routes>
