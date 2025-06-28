@@ -28,7 +28,7 @@ const ProductCatalog: React.FC = () => {
   const categoryTitles: { [key: string]: string } = {
     'resin-frames': 'Resin Frames',
     'keychains': 'Keychains',
-    'gift-hampers': 'Gift Hampers',
+    // 'gift-hampers': 'Gift Hampers',
     'cards': 'Greeting Cards',
     'phone-cases': 'Phone Cases',
     'gift-idea': 'Gift Idea'
@@ -52,7 +52,7 @@ const ProductCatalog: React.FC = () => {
               <Button 
                 variant="outline" 
                 size="md" 
-                className="border-[#8B7355] text-[#8B7355] hover:bg-[#8B7355] hover:text-white transition-all duration-200 shadow-md"
+                className="border-[#8B7355] text-[#8B7355] hover:bg-blue-900 hover:text-white transition-all duration-200 shadow-md"
               >
                 ← Back to Homepage
               </Button>
@@ -98,7 +98,7 @@ const ProductCatalog: React.FC = () => {
             <Button 
               variant="outline" 
               size="md" 
-              className="border-[#8B7355] text-[#8B7355] hover:bg-[#8B7355] hover:text-white transition-all duration-200 shadow-md"
+              className="border-[#8B7355] text-[#8B7355] hover:bg-blue-900 hover:text-white transition-all duration-200 shadow-md"
             >
               ← Back to Homepage
             </Button>

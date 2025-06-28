@@ -53,7 +53,7 @@ const WallClocksCatalog: React.FC = () => {
               <Button 
                 variant="outline" 
                 size="md" 
-                className="border-[#8B7355] text-[#8B7355] hover:bg-[#8B7355] hover:text-white transition-all duration-200 shadow-md"
+                className="border-[#8B7355] text-[#8B7355] hover:bg-blue-900 hover:text-white transition-all duration-200 shadow-md"
               >
                 ← Back to Homepage
               </Button>

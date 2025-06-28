@@ -351,26 +351,78 @@ export const products: Product[] = [
     tags: ['gift-set', 'couples', 'bundle']
   },
 
-  // Cards
+  // Gift Hampers - Gift Folder
   {
-    id: 'c1',
-    name: 'Resin Anniversary Card',
-    price: 24.99,
-    description: 'Handmade anniversary card with resin embellishments.',
-    image: '/p3.jpg',
+    id: 'gift1',
+    name: 'Elegant Gift Hamper',
+    price: 1299,
+    description: 'A beautiful resin gift hamper, perfect for special occasions.',
+    media: [ { type: 'image', src: '/Gift/01.jpg'},
+      {type: 'image', src: '/Gift/0101.jpg'}, ],
     category: 'cards',
-    isCustomizable: true,
-    tags: ['card', 'anniversary', 'greeting']
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'special']
   },
   {
-    id: 'c2',
-    name: 'Birthday Celebration Card',
-    price: 22.99,
-    description: 'Special birthday card with resin decorations and custom message.',
-    image: '/p4.jpg',
+    id: 'gift2',
+    name: 'Modern Gift Hamper',
+    price: 1499,
+    description: 'Modern resin gift hamper for contemporary gifting.',
+    media: [ { type: 'image', src: '/Gift/02.jpg' },
+      { type: 'image', src: '/Gift/0202.jpg' } 
+     ],
     category: 'cards',
-    isCustomizable: true,
-    tags: ['card', 'birthday', 'greeting']
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'modern']
+  },
+   {
+    id: 'gift3',
+    name: 'Modern Gift Hamper',
+    price: 1499,
+    description: 'Modern resin gift hamper for contemporary gifting.',
+    media: [ { type: 'image', src: '/Gift/03.jpg' },
+      { type: 'image', src: '/Gift/0303.jpg' } 
+     ],
+    category: 'cards',
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'modern']
+  },
+  {
+    id: 'gift4',
+    name: 'Modern Gift Hamper',
+    price: 1499,
+    description: 'Modern resin gift hamper for contemporary gifting.',
+    media: [ { type: 'image', src: '/Gift/04.jpg' },
+      { type: 'image', src: '/Gift/0404.jpg' } 
+     ],
+    category: 'cards',
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'modern']
+  },
+  {
+    id: 'gift5',
+    name: 'Modern Gift Hamper',
+    price: 1499,
+    description: 'Modern resin gift hamper for contemporary gifting.',
+    media: [ { type: 'image', src: '/Gift/05.jpg' }, 
+     ],
+    category: 'cards',
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'modern']
+  },
+  {
+    id: 'gift6',
+    name: 'Modern Gift Hamper',
+    price: 1499,
+    description: 'Modern resin gift hamper for contemporary gifting.',
+    media: [ { type: 'image', src: '/Gift/06.jpg' }, 
+      { type: 'image', src: '/Gift/0606.jpg' }, 
+      { type: 'image', src: '/Gift/0601.jpg' }, 
+      { type: 'image', src: '/Gift/0602.jpg' }, 
+    ],
+    category: 'cards',
+    isCustomizable: false,
+    tags: ['gift', 'hamper', 'modern']
   },
 
   // Phone Cases

@@ -35,13 +35,16 @@ const Navbar: React.FC = () => {
   }, [isMenuOpen]);
 
   const isActiveLink = (path: string) => {
+    if (path === '/products') {
+      return location.pathname === '/products';
+    }
     return location.pathname.startsWith(path);
   };
 
   const navLinks = [
+    { path: '/products', label: 'All Products' },
     { path: '/products/resin-frames', label: 'Resin Frames' },
     { path: '/products/keychains', label: 'Keychains' },
-    { path: '/products/gift-hampers', label: 'Gift Hampers' },
     { path: '/products/cards', label: 'Cards' },
     { path: '/products/phone-cases', label: 'Phone Cases' },
     { path: '/products/wallClocks', label: 'Wall Clocks' },

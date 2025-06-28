@@ -17,14 +17,14 @@ export const collections: Collection[] = [
     image: '/p5.jpg',
     path: '/products/keychains'
   },
-  {
-    id: 'gift-hampers',
-    title: 'Gift Hampers',
-    subtitle: 'Curated gift collections',
-    shortDescription: 'Thoughtfully curated gift hampers featuring our most beloved resin creations.',
-    image: '/p6.jpg',
-    path: '/products/gift-hampers'
-  },
+  // {
+  //   id: 'gift-hampers',
+  //   title: 'Gift Hampers',
+  //   subtitle: 'Curated gift collections',
+  //   shortDescription: 'Thoughtfully curated gift hampers featuring our most beloved resin creations.',
+  //   image: '/p6.jpg',
+  //   path: '/products/gift-hampers'
+  // },
   {
     id: 'wallClocks',
     title: 'Wall Clocks',
@@ -43,10 +43,10 @@ export const collections: Collection[] = [
   },
   {
     id: 'Gift idea',
-    title: 'Gift idea',
+    title: 'Gift Cards and Hampers',
     subtitle: 'Gift idea for your loved ones',
     shortDescription: 'Thoughtfully curated gift hampers featuring our most beloved resin creations.',
-    image: '/p2.jpg',
-    path: '/products/gift-idea'
+    image: '/p7.jpg',
+    path: '/products/cards'
   }
 ];
