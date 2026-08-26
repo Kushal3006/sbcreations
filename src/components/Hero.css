@@ -1,0 +1,35 @@
+.custom-dots {
+  bottom: 10px;
+  z-index: 20;
+}
+
+.custom-dots li button:before {
+  color: #8B7355;
+  opacity: 0.5;
+  font-size: 8px;
+}
+
+.custom-dots li.slick-active button:before {
+  color: #8B7355;
+  opacity: 1;
+}
+
+.slick-slider {
+  height: 100%;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-slide > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
